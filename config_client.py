@@ -37,7 +37,7 @@ for i in c:
 		f.writelines(out_auth_file_content)
 	
 	# replace server string 
-	out_ovpn_file_content[5] = server
+	out_ovpn_file_content[5] = 'remote '+server+' 443\n'
 	print(out_ovpn_file_content[5])
 	
 	# create ovpn_file
