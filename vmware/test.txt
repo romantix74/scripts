@@ -1,0 +1,4 @@
+﻿netsh interface ipv4 set dnsserver "Ethernet0" static 10.5.9.10 primary
+netsh interface ipv4 add dns name="Ethernet0" addr=10.5.9.11 index=2
+
+netsh interface ipv4 set address "Ethernet0" static 10.5.9.98 255.255.255.0 10.5.9.1 1
